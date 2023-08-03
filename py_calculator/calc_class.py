@@ -16,6 +16,21 @@ class Calculator(object):
     def add(self, a, b):
         return self._do_math(a, b, add)
 
+    def subtract(self, a, b):
+        return self._do_math(a, b, sub)
+
+    def multiply(self, a, b):
+        return self._do_math(a, b, mul)
+
+    def divide(self, a, b):
+        return self._do_math(a, b, div)
+
+    def maximum(self, a, b):
+        return self._do_math(a, b, maximum)
+
+    def minimum(self, a, b):
+        return self._do_math(a, b, minimum)
+
 
 #    Please implement the rest of functions
 #    - subtract

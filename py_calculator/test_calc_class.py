@@ -1,6 +1,6 @@
-from calc_class import *
-
 import pytest
+
+from calc_class import *
 
 # "Constants"
 
@@ -42,3 +42,28 @@ def test_add(calculator):
 #    - divide
 #    - maximum
 #    - minimum
+
+
+def test_sub(calculator):
+    answer = calculator.subtract(NUMBER_1, NUMBER_2)
+    verify_answer(1.0, answer, calculator.last_answer)
+
+
+def test_mul(calculator):
+    answer = calculator.multiply(NUMBER_1, NUMBER_2)
+    verify_answer(6.0, answer, calculator.last_answer)
+
+
+def test_div(calculator):
+    answer = calculator.divide(NUMBER_1, NUMBER_2)
+    verify_answer(1.5, answer, calculator.last_answer)
+
+
+def test_max(calculator):
+    answer = calculator.maximum(NUMBER_1, NUMBER_2)
+    verify_answer(3.0, answer, calculator.last_answer)
+
+
+def test_min(calculator):
+    answer = calculator.minimum(NUMBER_1, NUMBER_2)
+    verify_answer(2.0, answer, calculator.last_answer)
