@@ -1,4 +1,4 @@
-from calc_func import *
+from py_calculator.calc_func import *
 
 
 class Calculator(object):
@@ -30,7 +30,6 @@ class Calculator(object):
 
     def minimum(self, a, b):
         return self._do_math(a, b, minimum)
-
 
 #    Please implement the rest of functions
 #    - subtract

@@ -1,6 +1,6 @@
 import pytest
 
-from calc_class import *
+from py_calculator.calc_class import Calculator
 
 # "Constants"
 

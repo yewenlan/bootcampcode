@@ -1,4 +1,4 @@
-from calc_func import *
+from py_calculator.calc_func import *
 
 NUMBER_1 = 3.0
 NUMBER_2 = 2.0
